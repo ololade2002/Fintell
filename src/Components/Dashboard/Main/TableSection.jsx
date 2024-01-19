@@ -41,8 +41,8 @@ const rows = [
 
 const TableSection = () => {
   return (
-    <div className="Table ">
-  <TableContainer className='rounded-[16px] shadow-lg py-4 px-4' component={Paper}>
+  <div className="Table ">
+  <TableContainer className='rounded-[16px] tcontainer shadow-lg py-4 px-4' component={Paper}>
         <h3 className='text-black font-raleway font-[500] text-[20px] pb-0'>Invoice Activity</h3>
     <Table sx={{ minWidth: 650 }} aria-label="simple table">
       <TableHead>
@@ -61,15 +61,11 @@ const TableSection = () => {
             key={row.name}
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
           >
-            <TableCell component="th" scope="row">
-              {row.no}
-            </TableCell>
-            <TableCell align="left">#{row.trackingId}</TableCell>
-            <TableCell align="left">{row.name}</TableCell>
-            <TableCell align="left"> 
-              <span className="status" style={makeStyle(row.status)}>{row.status}</span>
-              </TableCell>
-            <TableCell align="left" className='font-raleway text-[24px] '>{row.date}</TableCell>
+            <TableCell className='tcell' component="th" scope="row"> {row.no}</TableCell>
+            <TableCell className='tcell' align="left">#{row.trackingId}</TableCell>
+            <TableCell className='tcell' align="left">{row.name}</TableCell>
+            <TableCell className='tcell' align="left"> <span className="status" style={makeStyle(row.status)}>{row.status}</span></TableCell>
+            <TableCell align="left" className='tcell'>{row.date}</TableCell>
             <TableCell align="left" className='details text-[14px]'>
               <a href="#">Details</a>
             </TableCell>
