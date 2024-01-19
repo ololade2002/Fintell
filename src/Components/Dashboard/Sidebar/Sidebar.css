@@ -1,0 +1,144 @@
+
+
+.sidebar {
+  padding-top: 2rem;
+  font-family: 'Poppins',sans-serif;
+  position: relative;
+}
+header>a {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+
+
+/* menu */
+.sidebar-menu {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   
+}
+.menu-preview {
+   position: relative;
+   height: 46px;
+   text-align: center;
+   margin-left: 1.5rem;
+   margin-top: 15px;
+   gap: .8rem;
+   display: flex;
+   align-items: center;
+   border-radius: 6px;
+   
+}
+.menu-preview svg {
+    width: 1.8rem;
+    height: 1.8rem;  
+}
+.menu-preview span {
+    font-size: 16px;
+  
+}
+.menu-preview:hover {
+   cursor: pointer;
+}
+.active {
+    background-color: #ecfeec;
+    margin-left: 0;
+}
+.active::before {
+    height: 100%;
+    content: '';
+    width: .4rem;
+    background-color: #183835;
+    /*margin-right: calc(1rem-.6rem);*/
+}
+.bottom {
+    position: absolute;
+    bottom: 2rem;
+}
+.bars {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+  
+    .sidebar-menu {
+        justify-content: center;
+    }
+    .menu-preview {
+        text-decoration: none;
+        justify-content: center;
+        
+        margin-top: 2rem;
+        height: 45px;
+        margin-left: 0rem;
+    }
+    .menu-preview>span {
+        display: none;
+    }
+    .active::before {
+        position: absolute;
+        left: 0rem;
+       }
+   .bottom {
+    left: 1rem;
+    bottom: 2rem;
+   }
+}
+
+@media screen and (max-width:992px) {
+    .sidebar {
+       position: fixed;
+       z-index: 9;
+       background: #fff;
+       width: 50%;
+       padding-right: 1rem;
+       height: 100%;
+    }
+.menu-preview {
+    height: 40px;
+    margin-left: 0rem;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+    .menu-preview>span {
+        font-size: 14px;
+        display: block;
+    }
+    
+    .active {
+       background-color: #e4f8e4;
+        margin-left: 0;
+        transform: scale(1.06);
+    }
+    .menu-preview>svg {
+        margin-left: 2rem;
+    }
+ 
+    header {
+        display: flex;
+    }
+    .bottom {
+        position: relative;
+        bottom: -1rem;
+        left: -0.2rem;
+    }
+    .bars {
+        z-index: 20;
+        position: fixed;
+        top: 1rem;
+        left: 60%;
+        display: block;
+        padding: 3px;
+        border-radius: 10px;
+    }
+ 
+}

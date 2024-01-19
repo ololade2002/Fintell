@@ -1,0 +1,29 @@
+
+* {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
+}
+.width-f {
+  width: fit-content;
+}
+.web {
+  display: none !important;
+}
+
+@media screen and (max-width:768px) {
+.invoice-section {
+  display: none;
+}
+}
+@media screen and (max-width:1024px) {
+ .mobile {
+  display: none !important;
+ }
+}
+
+@media screen and (max-width:992px) {
+ .web {
+  display: flex !important;
+ }
+}
