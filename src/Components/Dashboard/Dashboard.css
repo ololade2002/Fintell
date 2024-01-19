@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 .dashboard {
    background-color: #e4f8e4;
@@ -29,36 +28,4 @@
   }
 }
 
-=======
-
-.dashboard {
-   background-color: #e4f8e4;
-    height: auto;
-    width: 100%;
-    /*padding: 8px;*/
-}
-.glass {
-    display: grid;
-    grid-template-columns: 11rem auto ;
-    background: rgba(255, 255, 255, 01);
-    width: 100%;
-    height: 100%;
-    
-}
-
-@media screen and (max-width:1200px) {
-  .glass {
-    display: grid;
-   grid-template-columns: 20%  auto;
-    overflow-y: scroll;
-  }
-}
-
-@media screen and (max-width:992px) {
-  .glass {
-    grid-template-columns: 1fr;
-  }
-}
-
->>>>>>> e637b3d0f48a11f1dd9dbc602c58616be201a7bd
   
