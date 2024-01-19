@@ -42,7 +42,7 @@ const rows = [
 const TableSection = () => {
   return (
     <div className="Table ">
-  <TableContainer className='rounded-lg shadow-lg py-4 px-4' component={Paper}>
+  <TableContainer className='rounded-[16px] shadow-lg py-4 px-4' component={Paper}>
         <h3 className='text-black font-raleway font-[500] text-[20px] pb-0'>Invoice Activity</h3>
     <Table sx={{ minWidth: 650 }} aria-label="simple table">
       <TableHead>
@@ -69,8 +69,8 @@ const TableSection = () => {
             <TableCell align="left"> 
               <span className="status" style={makeStyle(row.status)}>{row.status}</span>
               </TableCell>
-            <TableCell align="left" className='font-raleway text-[24px] text-red-500'>{row.date}</TableCell>
-            <TableCell align="left" className='details'>
+            <TableCell align="left" className='font-raleway text-[24px] '>{row.date}</TableCell>
+            <TableCell align="left" className='details text-[14px]'>
               <a href="#">Details</a>
             </TableCell>
           

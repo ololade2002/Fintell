@@ -112,7 +112,11 @@ border: none;
   border-radius: .7rem;
 }
 .details {
-  color: red !important;
+  color: rgba(188, 186, 186,0.8) !important;
+  text-decoration: underline;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  border-radius: 14px !important;
 }
 .status {
   padding: 8px;
