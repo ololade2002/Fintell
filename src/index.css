@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.box {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.apexcharts-legend-text {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color:  rgb(113,113,122) !important;
+    
+}
+.apexcharts-legend-series {
+    padding-bottom: 0.5rem !important;
+}
+
+/* Navbar Section*/
+   .menu {
+    display: none;
+    }
+    .bikes {
+    display: none;
+    }
+    .modal-text {
+      position: absolute;
+      top: 0;
+    }
+    .cards-s {
+      box-shadow: 0 8px 26px 0 rgba(32,33,36,.6);
+    }
+    
+    @media screen and (max-width:1023px) {
+    .bikes {
+    display: flex;
+    }
+    .ebikes-popup {
+      display: none;
+    }    
+    .icon {
+    display: none;
+    }
+    .menu {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;  
+    }
+    .webNav {
+    display: none;
+      }
+    .menu>svg {
+    font-size: 1.9rem;
+    position: relative;
+    z-index: 4;
+    }
+    .mobileNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    position: absolute;
+    background-color: #ddf1e6;
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+    font-size: 22px;
+    gap: 2rem;
+    top: 0rem;
+    left: 0;
+    }
+    .connect-mobileNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    position: absolute;
+    background-color: #fff;
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+    font-size: 22px;
+    gap: 2rem;
+    top: 0rem;
+    left: 0;
+    }
+    .m-view {
+    display: none;
+     } 
+    }
+    
+/*Table Section*/
+.Table {
+  padding: 0rem;
+}
+.MuiTableRow-root > * {
+  padding: 15px !important;
+}
+.thead {
+  font-weight: bold !important;
+border: none;
+}
+
+.Table:first-child {
+  border-radius: .7rem;
+}
+.details {
+  color: red !important;
+}
+.status {
+  padding: 8px;
+  border-radius: 2px;
+}
+.css-1ygcj2i-MuiTableCell-root {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+.css-1ex1afd-MuiTableCell-root {
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+@media screen and (max-width:1200px) {
+ .Table {
+ text-decoration: none;
+ width: 100%;
+ }
+}
+
+@media screen and (max-width:768px) {
+.Table {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 93vw;
+}   
+}
+
+@media screen and (max-width:560px) {
+  .Table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  }   
+}
